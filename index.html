@@ -2,65 +2,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Scorpio Full Moon Portal – Sacred Union</title>
-    <style>
-        body {
-            font-family: 'Titillium Web', sans-serif;
-            background: #fdfcfb;
-            color: #2c2c2c;
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #5c2670;
-            text-align: center;
-        }
-        .card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin: 2rem 0;
-        }
-        a {
-            display: block;
-            text-align: center;
-            background: #5c2670;
-            color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 1rem;
-            font-size: 1.2rem;
-        }
-        a:hover {
-            background: #7a349b;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Scorpio Full Moon Portal – Sacred Union</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Titillium Web', sans-serif;
+      background: #fdfcfb;
+      color: #2c2c2c;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #5c2670;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeOut 2s ease-out 4s forwards;
+    }
+
+    .intro h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out 0.5s forwards;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    .main {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 2rem 0;
+    }
+
+    h2, h3 {
+      color: #5c2670;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      background: #5c2670;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    a:hover {
+      background: #7a349b;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    .symbol {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      document.querySelector('.intro').style.display = 'none';
+      document.querySelector('.main').style.display = 'block';
+    }, 5000);
+  </script>
 </head>
 <body>
 
+  <div class="intro">
     <h1>Scorpio Full Moon Portal</h1>
-    <h2>🦂 Sacred Union Tools for James – May 2025</h2>
+    <p>A Sacred Union Offering for James – May 2025</p>
+  </div>
+
+  <div class="main">
+    <div class="symbol">🌕 ✶ ♏ ✶ 🜃</div>
 
     <div class="card">
-        <h3>🧙 Full Moon Toolkit</h3>
-        <p>This includes your ritual, journal prompts, and tarot spread for soul-level clarity and release.</p>
-        <a href="Scorpio_Full_Moon_Toolkit_James.html">Open the Full Moon Toolkit</a>
+      <h3>🧙 Full Moon Toolkit</h3>
+      <p>Ritual, journal prompts, and tarot spread for soul-level clarity and release.</p>
+      <a href="./Scorpio_Full_Moon_Toolkit_James.html">Open the Full Moon Toolkit</a>
     </div>
 
     <div class="card">
-        <h3>🎧 Audio Ritual & Reflection Page</h3>
-        <p>Listen to the guided meditation and write your responses directly into the sacred journal fields.</p>
-        <a href="Scorpio_Full_Moon_Reflection_James.html">Open Ritual & Reflection Page</a>
-        <a href="Scorpio_Full_Moon_Audio_James.mp3">Download the Audio Recording</a>
+      <h3>🎧 Audio Ritual & Reflection Page</h3>
+      <p>Listen to the guided meditation and write your responses in the sacred journal.</p>
+      <a href="./Scorpio_Full_Moon_Reflection_James.html">Open Ritual & Reflection Page</a>
+      <a href="./Scorpio_Full_Moon_Audio_James.mp3">Download the Audio Recording</a>
     </div>
 
-    <footer style="text-align: center; margin-top: 3rem; font-size: 0.9rem;">
-        <p>© Sacred Union | Created for James | Full Moon in Scorpio, May 2025</p>
+    <footer>
+      <p>© Sacred Union | Created for James | Full Moon in Scorpio, May 2025</p>
     </footer>
+  </div>
 
 </body>
 </html>
