@@ -1,125 +1,129 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Scorpio Full Moon Portal</title>
-  
-<style>
-  :root {
-    --background: #f5f3f0;
-    --primary: #3c2f4e;
-    --accent: #a58db4;
-    --text: #1c1b20;
-    --card-bg: #ffffff;
-  }
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f3f0;
+      --text: #1c1b20;
+      --primary: #3c2f4e;
+      --accent: #a58db4;
+      --card: #ffffff;
+      --border: #ddd;
+    }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--background);
-    font-family: 'Titillium Web', sans-serif;
-    color: var(--text);
-    line-height: 1.6;
-  }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: 'Titillium Web', sans-serif;
+      color: var(--text);
+    }
 
-  header {
-    background: var(--background);
-    text-align: center;
-    padding: 3rem 1rem 1rem;
-  }
+    header {
+      background: var(--bg);
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
 
-  header h1 {
-    font-size: 2.4rem;
-    color: var(--primary);
-    margin: 0 0 0.5rem;
-  }
+    header h1 {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin: 0 0 0.5rem;
+    }
 
-  header p {
-    font-size: 1rem;
-    color: var(--accent);
-  }
+    header p {
+      font-size: 1rem;
+      color: var(--accent);
+    }
 
-  nav {
-    background: var(--primary);
-    padding: 0.75rem 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
+    nav {
+      background: var(--primary);
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-  }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-  main {
-    padding: 2rem 1rem;
-    max-width: 900px;
-    margin: auto;
-  }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1024px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
 
-  .card {
-    background: var(--card-bg);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 2rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
 
-  h2 {
-    color: var(--primary);
-    margin-top: 0;
-  }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
 
-  .button {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    font-weight: 600;
-  }
+    .button {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
 
-  .button:hover {
-    background: var(--accent);
-  }
+    .button:hover {
+      background: var(--accent);
+    }
 
-  footer {
-    text-align: center;
-    font-size: 0.85rem;
-    padding: 2rem 1rem;
-    color: #999;
-  }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 2rem 1rem;
+      color: #999;
+    }
 
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid #ccc;
-    margin-top: 1rem;
-    font-size: 1rem;
-    background: #fefefe;
-    color: var(--text);
-  }
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+      font-size: 1rem;
+      background: #fefefe;
+      color: var(--text);
+    }
 
-  audio {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    background: #eee;
-  }
-</style>
-
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      background: #eee;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Scorpio Full Moon Portal</h1>
@@ -139,7 +143,6 @@
       <p>Deepen into presence with ritual prompts, tarot reflections, and sacred insights.</p>
       <a class="button" href="toolkit.html">Open Toolkit</a>
     </div>
-
     <div class="card">
       <h2>🎧 Audio Ritual & Reflection</h2>
       <p>Use this space for quiet listening, reflection, and integration of your inner truths.</p>
