@@ -12,6 +12,26 @@
       color: #2c2c2c;
     }
 
+    nav {
+      background-color: #5c2670;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .intro {
       display: flex;
       align-items: center;
@@ -66,7 +86,7 @@
       color: #5c2670;
     }
 
-    a {
+    a.button {
       display: block;
       text-align: center;
       background: #5c2670;
@@ -78,7 +98,7 @@
       font-size: 1.2rem;
     }
 
-    a:hover {
+    a.button:hover {
       background: #7a349b;
     }
 
@@ -108,20 +128,27 @@
     <p>A Sacred Union Offering for James – May 2025</p>
   </div>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Scorpio_Full_Moon_Toolkit_James.html">Toolkit</a>
+    <a href="Scorpio_Full_Moon_Reflection_James.html">Ritual & Reflection</a>
+    <a href="Scorpio_Full_Moon_Audio_James.mp3">Audio</a>
+  </nav>
+
   <div class="main">
     <div class="symbol">🌕 ✶ ♏ ✶ 🜃</div>
 
     <div class="card">
       <h3>🧙 Full Moon Toolkit</h3>
       <p>Ritual, journal prompts, and tarot spread for soul-level clarity and release.</p>
-      <a href="./Scorpio_Full_Moon_Toolkit_James.html">Open the Full Moon Toolkit</a>
+      <a class="button" href="Scorpio_Full_Moon_Toolkit_James.html">Open the Full Moon Toolkit</a>
     </div>
 
     <div class="card">
       <h3>🎧 Audio Ritual & Reflection Page</h3>
       <p>Listen to the guided meditation and write your responses in the sacred journal.</p>
-      <a href="./Scorpio_Full_Moon_Reflection_James.html">Open Ritual & Reflection Page</a>
-      <a href="./Scorpio_Full_Moon_Audio_James.mp3">Download the Audio Recording</a>
+      <a class="button" href="Scorpio_Full_Moon_Reflection_James.html">Open Ritual & Reflection Page</a>
+      <a class="button" href="Scorpio_Full_Moon_Audio_James.mp3">Download the Audio Recording</a>
     </div>
 
     <footer>
