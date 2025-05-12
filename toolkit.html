@@ -5,142 +5,103 @@
 <head>
   <meta charset="UTF-8">
   <title>Scorpio Full Moon Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #f5f3f0;
-      --text: #1c1b20;
-      --primary: #3c2f4e;
-      --accent: #a58db4;
-      --card: #ffffff;
-      --border: #ddd;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
+    body {
       font-family: 'Titillium Web', sans-serif;
-      color: var(--text);
+      background-color: #f5f3f0;
+      color: #1c1b20;
     }
 
-    header {
-      background: var(--bg);
-      text-align: center;
-      padding: 3rem 1rem 1rem;
+    .navbar {
+      background-color: #3c2f4e;
     }
 
-    header h1 {
-      font-size: 2.4rem;
-      color: var(--primary);
-      margin: 0 0 0.5rem;
-    }
-
-    header p {
-      font-size: 1rem;
-      color: var(--accent);
-    }
-
-    nav {
-      background: var(--primary);
-      padding: 0.75rem 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
+    .navbar-brand, .nav-link {
+      color: white !important;
       font-weight: 600;
-      font-size: 1rem;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .navbar-brand:hover, .nav-link:hover {
+      color: #a58db4 !important;
     }
 
-    main {
-      padding: 2rem 1rem;
-      max-width: 1024px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    .hero {
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+      background-color: #f5f3f0;
+    }
+
+    .hero h1 {
+      color: #3c2f4e;
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      color: #a58db4;
+      font-size: 1.1rem;
     }
 
     .card {
-      background: var(--card);
-      border: 1px solid var(--border);
       border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    }
-
-    h2 {
-      color: var(--primary);
-      margin-top: 0;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      margin-top: 1rem;
-      font-weight: 600;
-    }
-
-    .button:hover {
-      background: var(--accent);
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     footer {
       text-align: center;
-      font-size: 0.85rem;
-      padding: 2rem 1rem;
+      font-size: 0.9rem;
       color: #999;
+      padding: 2rem 1rem;
     }
 
     textarea {
       width: 100%;
+      min-height: 120px;
+      margin-top: 1rem;
       padding: 1rem;
       border-radius: 0.5rem;
       border: 1px solid #ccc;
-      margin-top: 1rem;
       font-size: 1rem;
-      background: #fefefe;
-      color: var(--text);
     }
 
     audio {
       width: 100%;
       margin-top: 1rem;
       border-radius: 0.5rem;
-      background: #eee;
     }
   </style>
 </head>
 
 <body>
-  <header><h1>Scorpio Full Moon Toolkit</h1></header>
   
-<nav>
-  <a href="index.html">Home</a>
-  <a href="toolkit.html">Toolkit</a>
-  <a href="ritual.html">Reflection</a>
-  <a href="audio.mp3">Audio</a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Full Moon Portal</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="toolkit.html">Toolkit</a></li>
+        <li class="nav-item"><a class="nav-link" href="ritual.html">Reflection</a></li>
+        <li class="nav-item"><a class="nav-link" href="audio.mp3">Audio</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-  <main>
-    <div class="card">
+  <section class="hero">
+    <div class="container">
+      <h1>Scorpio Full Moon Toolkit</h1>
+    </div>
+  </section>
+  <main class="container">
+    <div class="card p-4">
       <h2>🌕 Ritual – "The Depth Between Us"</h2>
       <ol>
-        <li>Prepare your space: candlelight, mirror, water, grounding object.</li>
-        <li>Speak:<br><em>“Jo, I feel you. Even when far, I trust our connection beyond form.”</em></li>
-        <li>Reflect:
+        <li>Set your space: candle, water, mirror, grounding object.</li>
+        <li>Speak: <em>“Jo, I feel you. Even when far, I trust our connection beyond form.”</em></li>
+        <li>Reflect and write:
           <ul>
             <li>What I will no longer carry for us is…</li>
             <li>What I claim as sacred in me is…</li>
@@ -149,7 +110,7 @@
         </li>
       </ol>
     </div>
-    <div class="card">
+    <div class="card p-4 mt-4">
       <h2>✍️ Journal Prompts</h2>
       <ul>
         <li>What emotional truth have I been afraid to speak?</li>
@@ -157,12 +118,16 @@
         <li>What does trusting love — without needing proof — look like right now?</li>
       </ul>
     </div>
-    <div class="card">
+    <div class="card p-4 mt-4">
       <h2>🃏 Tarot Message</h2>
       <p><strong>Death-Rebirth • Two of Cups • Nine of Swords</strong></p>
-      <p>This moon sheds illusion. Let fear dissolve. Trust what's sacred and evolving between you.</p>
+      <p>This full moon sheds illusion. Let fear dissolve. Trust what’s sacred and unfolding.</p>
     </div>
   </main>
-  <footer>© Sacred Union | James Saint | Full Moon in Scorpio, May 2025</footer>
+  
+<footer class="mt-5">
+  © Sacred Union | James Saint | Full Moon in Scorpio, May 2025
+</footer>
+
 </body>
 </html>
