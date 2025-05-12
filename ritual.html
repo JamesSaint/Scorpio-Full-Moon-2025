@@ -3,104 +3,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ritual & Reflection</title>
+  <title>Reflection & Audio Ritual</title>
   
 <style>
   :root {
-    --deep-violet: #2d0036;
-    --scorpio-pink: #a24b84;
-    --moonlight: #fdfcfa;
-    --text-color: #e8e6eb;
-    --highlight: #ffcff9;
+    --midnight: #1c1a23;
+    --moonlight: #f5f3f7;
+    --glow: #e0d1f3;
+    --lilac: #b99bcf;
+    --mist: #cdc1db;
   }
 
   html, body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
-    background: linear-gradient(135deg, var(--deep-violet), #120015);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: linear-gradient(160deg, var(--midnight), #2b2535);
+    color: var(--moonlight);
   }
 
   header {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 2rem;
+    background: transparent;
+    padding: 3rem 1rem 2rem;
     text-align: center;
-    backdrop-filter: blur(6px);
   }
 
   header h1 {
-    font-size: 2.5rem;
-    color: var(--highlight);
+    font-size: 2.6rem;
+    color: var(--glow);
     margin: 0;
   }
 
   header p {
-    font-size: 1.2rem;
-    color: var(--scorpio-pink);
+    font-size: 1.15rem;
+    color: var(--lilac);
   }
 
   nav {
-    background: #3c0054;
+    background: #2a2433;
     display: flex;
     justify-content: center;
+    padding: 0.8rem 1rem;
     gap: 2rem;
-    padding: 0.75rem;
-    font-size: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   }
 
   nav a {
-    color: var(--moonlight);
+    color: var(--mist);
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
   }
 
   nav a:hover {
-    text-decoration: underline;
-    color: var(--highlight);
+    color: var(--glow);
   }
 
   main {
-    padding: 2rem;
-    max-width: 960px;
+    padding: 2rem 1rem;
+    max-width: 900px;
     margin: auto;
   }
 
   .card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1.25rem;
     padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 0 0 20px rgba(162, 75, 132, 0.4);
+    box-shadow: 0 0 15px rgba(225, 215, 250, 0.08);
   }
 
   h2 {
-    color: var(--highlight);
+    color: var(--glow);
+    margin-top: 0;
   }
 
   .button {
     display: inline-block;
-    background: var(--scorpio-pink);
-    color: white;
+    background: var(--lilac);
+    color: var(--midnight);
     padding: 0.75rem 1.5rem;
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     margin-top: 1rem;
     font-weight: 600;
+    transition: background 0.3s ease;
   }
 
   .button:hover {
-    background: #e96cb5;
+    background: var(--glow);
   }
 
   footer {
     text-align: center;
     font-size: 0.9rem;
     padding: 2rem 1rem;
-    color: var(--highlight);
+    color: var(--mist);
   }
 
   textarea {
@@ -108,15 +107,17 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin: 1rem 0;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    background: #2d0036;
+    border: 1px solid var(--lilac);
+    background: rgba(255, 255, 255, 0.08);
     color: white;
+    font-size: 1rem;
   }
 
   audio {
     width: 100%;
     margin-top: 1rem;
+    border-radius: 8px;
+    background: #000;
   }
 </style>
 
