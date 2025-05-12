@@ -6,75 +6,104 @@
   <title>Full Moon Toolkit</title>
   
 <style>
-  body {
-    margin: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background: #fdfcfb;
-    color: #2c2c2c;
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
+  :root {
+    --primary: #5c2670;
+    --accent: #a37bb4;
+    --background: #f9f8f6;
+    --text: #2e2e2e;
   }
-  nav {
-    background-color: #5c2670;
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--primary);
     color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  nav {
+    background: var(--primary);
     display: flex;
     justify-content: center;
+    padding: 0.5rem;
     gap: 2rem;
-    padding: 1rem 0;
-    font-size: 1rem;
-    margin-bottom: 2rem;
   }
+
   nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
   }
+
   nav a:hover {
     text-decoration: underline;
   }
-  .card {
-    background: #ffffff;
-    border-radius: 12px;
+
+  main {
     padding: 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
     margin: 2rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
-  h2, h3 {
-    color: #5c2670;
+
+  h1, h2 {
+    color: var(--primary);
   }
-  a.button {
-    display: block;
-    text-align: center;
-    background: #5c2670;
+
+  .button {
+    display: inline-block;
+    background: var(--primary);
     color: white;
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
+    border-radius: 0.5rem;
     margin-top: 1rem;
-    font-size: 1.2rem;
   }
-  a.button:hover {
-    background: #7a349b;
+
+  .button:hover {
+    background: var(--accent);
   }
-  textarea {
-    width: 100%;
-    height: 100px;
-    margin-top: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 0.75rem;
-    font-size: 1rem;
-  }
+
   footer {
     text-align: center;
-    margin-top: 3rem;
     font-size: 0.9rem;
+    padding: 2rem 1rem;
+    color: #888;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 1rem;
   }
 </style>
 
 </head>
 <body>
+  <header><h1>Full Moon Toolkit</h1></header>
   
 <nav>
   <a href="index.html">Home</a>
@@ -83,38 +112,35 @@
   <a href="audio.mp3">Audio</a>
 </nav>
 
-  <h1>Scorpio Full Moon Toolkit</h1>
-
-  <div class="card">
-    <h2>🌕 Full Moon Ritual – "The Depth Between Us"</h2>
-    <ol>
-      <li>Set your space with a candle, mirror, bowl of water, and a grounding object.</li>
-      <li>Gaze into the water and say: “Jo, I feel you. Even when you are far, I trust our connection beyond words.”</li>
-      <li>Write:
-        <ul>
-          <li>What I will no longer carry for us is…</li>
-          <li>What I claim as sacred in me is…</li>
-          <li>What I trust to unfold is…</li>
-        </ul>
-      </li>
-    </ol>
-  </div>
-
-  <div class="card">
-    <h2>✍️ Journal Prompts</h2>
-    <ul>
-      <li>What emotional truth have I been afraid to speak in this relationship?</li>
-      <li>Where have I lost myself in another’s needs?</li>
-      <li>What does trusting love — without needing proof — look like right now?</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>🃏 Tarot Message</h2>
-    <p><strong>Death-Rebirth • Two of Cups • Nine of Swords</strong></p>
-    <p>This full moon is a karmic shedding. The bond remains sacred, but fear must be surrendered to allow deep trust and renewal.</p>
-  </div>
-
-  <footer>© Sacred Union | Created for James | Full Moon in Scorpio, May 2025</footer>
+  <main>
+    <div class="card">
+      <h2>🌕 Ritual – "The Depth Between Us"</h2>
+      <ol>
+        <li>Set your space with a candle, mirror, water, and grounding object.</li>
+        <li>Gaze into the bowl and say:<br><em>“Jo, I feel you. Even when you are far, I trust our connection beyond words.”</em></li>
+        <li>Write:
+          <ul>
+            <li>What I will no longer carry for us is…</li>
+            <li>What I claim as sacred in me is…</li>
+            <li>What I trust to unfold is…</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>✍️ Journal Prompts</h2>
+      <ul>
+        <li>What emotional truth have I been afraid to speak?</li>
+        <li>Where have I lost myself in another’s needs?</li>
+        <li>What does trusting love without needing proof look like right now?</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>🃏 Tarot Message</h2>
+      <p><strong>Death-Rebirth • Two of Cups • Nine of Swords</strong></p>
+      <p>This moon sheds illusion. The bond is sacred, but fear must be surrendered so trust can thrive.</p>
+    </div>
+  </main>
+  <footer>© Sacred Union | James Saint | Full Moon in Scorpio, May 2025</footer>
 </body>
 </html>
