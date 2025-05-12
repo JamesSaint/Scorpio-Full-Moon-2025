@@ -12,7 +12,6 @@
       font-family: 'Titillium Web', sans-serif;
       background-color: #f5f3f0;
       color: #1c1b20;
-      margin: 0;
     }
 
     .navbar {
@@ -22,15 +21,21 @@
     .navbar-brand, .nav-link {
       color: white !important;
       font-weight: 600;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
     }
 
     .nav-link:hover {
       color: #a58db4 !important;
     }
 
+    .container-xl {
+      max-width: 960px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
     .hero {
-      padding: 3rem 0 1rem;
+      padding: 3rem 1rem 1rem;
       text-align: center;
     }
 
@@ -43,12 +48,6 @@
     .hero p {
       font-size: 1rem;
       color: #a58db4;
-    }
-
-    .container-xl {
-      max-width: 960px;
-      margin: auto;
-      padding: 0 1rem;
     }
 
     .card {
@@ -66,38 +65,6 @@
       margin-bottom: 1rem;
     }
 
-    .btn-primary {
-      background-color: #3c2f4e;
-      border: none;
-      font-weight: 600;
-      border-radius: 0.5rem;
-      padding: 0.6rem 1.4rem;
-    }
-
-    .btn-primary:hover {
-      background-color: #a58db4;
-    }
-
-    .btn-outline-secondary {
-      border: 1px solid #a58db4;
-      color: #3c2f4e;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      padding: 0.6rem 1.4rem;
-    }
-
-    .btn-outline-secondary:hover {
-      background-color: #3c2f4e;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: #999;
-      padding: 2rem 1rem;
-    }
-
     textarea {
       width: 100%;
       padding: 1rem;
@@ -111,6 +78,60 @@
       width: 100%;
       margin-top: 1rem;
     }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      padding: 2rem 1rem;
+    }
+    
+/* Primary Button */
+.btn-primary {
+  background-color: #3c2f4e;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a58db4;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  background-color: #2e223d;
+  transform: translateY(1px);
+}
+
+/* Outline Secondary Button */
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #3c2f4e;
+  border: 2px solid #3c2f4e;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #3c2f4e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary:active {
+  background-color: #2e223d;
+  color: #ffffff;
+  transform: translateY(1px);
+}
+
   </style>
 </head>
 
@@ -124,7 +145,6 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="toolkit.html">Toolkit</a></li>
         <li class="nav-item"><a class="nav-link" href="ritual.html">Reflection</a></li>
-        <li class="nav-item"><a class="nav-link" href="audio.mp3">Audio</a></li>
       </ul>
     </div>
   </div>
@@ -139,14 +159,13 @@
   <main class="container-xl">
     <div class="card">
       <h2>🧙 Full Moon Toolkit</h2>
-      <p>Deepen into presence with ritual prompts, tarot reflections, and sacred insights.</p>
+      <p>Ritual prompts, tarot reflections, and sacred insights.</p>
       <a class="btn btn-primary" href="toolkit.html">Open Toolkit</a>
     </div>
     <div class="card">
       <h2>🎧 Audio Ritual & Reflection</h2>
-      <p>Use this space for quiet listening, reflection, and integration of your inner truths.</p>
+      <p>Listen, reflect, and integrate in sacred space.</p>
       <a class="btn btn-primary me-2" href="ritual.html">Go to Reflection</a>
-      <a class="btn btn-outline-secondary" href="audio.mp3">Download Audio</a>
     </div>
   </main>
   
